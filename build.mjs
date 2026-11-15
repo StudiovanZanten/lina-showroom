@@ -29,7 +29,7 @@ const T = {
   nl: {
     lang: "nl",
     title: "LINA, ons systeem voor de hele organisatie",
-    desc: "LINA is je digitale assistent. Eén systeem voor dagbesteding, deelnemers, team, HR, cijfers en koppelingen. Gemaakt voor franchiseorganisaties die elke vestiging sterk willen maken.",
+    desc: "LINA is je digitale assistent. Eén systeem voor dagbesteding, deelnemers, team, HR, cijfers en koppelingen. Voor dagbestedingen, scholen, bedrijven en franchiseorganisaties.",
     nav: ["Wat LINA doet", "Voor franchise", "Veilig", "Starten"],
     demo: "Plan een demo",
     andereTaal: { label: "EN", href: "/en/" },
@@ -39,7 +39,7 @@ const T = {
       h1b: "Eén systeem.",
       lead: "LINA is je digitale assistent. Van de presentielijst om half negen tot het getekende contract van je nieuwe collega en de omzet van vandaag. Alles op één plek, op elke vestiging, op elke telefoon.",
       cta2: "Bekijk wat LINA doet",
-      chips: ["Dagbesteding", "HR en contracten", "Cijfers", "Nmbrs en L1nda", "Op je telefoon"],
+      chips: ["Dagbestedingen", "Scholen", "Bedrijven", "Franchiseorganisaties"],
     },
     mock: {
       groet: "Goedemorgen, Sanne",
@@ -66,7 +66,7 @@ const T = {
       stats: [["1", "systeem voor de hele organisatie"], ["8", "onderdelen, rustig ingedeeld"], ["0", "papieren mappen nodig"], ["24/7", "op elke telefoon, als app"]],
     },
     modulesKicker: "Wat LINA doet",
-    modulesH2: "Alles wat een vestiging draaiende houdt",
+    modulesH2: "Alles wat je organisatie draaiende houdt",
     modules: [
       ["dag", "Dagbesteding", "Presentielijst met een tik per deelnemer, werkplekken per dag, ontwikkeldoelen met stappen en een quiz, en een PDF voor het zorgkantoor aan het eind van de maand.", ["Presentie", "Werkplekken", "Doelen", "Zorgkantoor"]],
       ["mensen", "Deelnemers", "Een digitale map per deelnemer met wat belangrijk is om te weten, documenten, formulieren met handtekening op het scherm en gesprekken die je samen plant met ouders en consulenten.", ["Digitale map", "Samen plannen", "Gespreksscherm"]],
@@ -140,8 +140,8 @@ const T = {
       quoteBy: "Zo willen we dat elk team over LINA praat",
     },
     slot: {
-      h2: "Laat je vestigingen werken als de beste.",
-      p: "Plan een demo van een half uur. We laten zien wat LINA voor jullie formule kan doen.",
+      h2: "Geef je team de tijd terug.",
+      p: "Plan een demo van een half uur. We laten zien wat LINA voor jullie organisatie kan doen.",
       cta2: "Mail ons",
     },
     footer: {
@@ -155,7 +155,7 @@ const T = {
 T.en = {
   lang: "en",
   title: "LINA, our system for your whole organisation",
-  desc: "LINA is your digital assistant. One system for day care, participants, team, HR, numbers and integrations. Made for franchise organisations that want every location to be strong.",
+  desc: "LINA is your digital assistant. One system for day care, participants, team, HR, numbers and integrations. For day care, schools, businesses and franchise organisations.",
   nav: ["What LINA does", "For franchise", "Secure", "Get started"],
   demo: "Book a demo",
   andereTaal: { label: "NL", href: "/" },
@@ -165,7 +165,7 @@ T.en = {
     h1b: "One system.",
     lead: "LINA is your digital assistant. From the attendance list at half past eight to the signed contract of your new colleague and today's revenue. Everything in one place, at every location, on every phone.",
     cta2: "See what LINA does",
-    chips: ["Day care", "HR and contracts", "Numbers", "Nmbrs and L1nda", "On your phone"],
+    chips: ["Day care", "Schools", "Businesses", "Franchise organisations"],
   },
   mock: {
     groet: "Good morning, Sanne",
@@ -192,7 +192,7 @@ T.en = {
     stats: [["1", "system for the whole organisation"], ["8", "sections, calmly organised"], ["0", "paper files needed"], ["24/7", "on every phone, as an app"]],
   },
   modulesKicker: "What LINA does",
-  modulesH2: "Everything that keeps a location running",
+  modulesH2: "Everything that keeps your organisation running",
   modules: [
     ["dag", "Day care", "Attendance with one tap per participant, workstations per day, development goals with steps and a quiz, and a ready PDF for the care office at the end of the month.", ["Attendance", "Workstations", "Goals", "Care office"]],
     ["mensen", "Participants", "A digital file per participant with what matters most, documents, forms signed on screen and meetings you plan together with parents and case managers.", ["Digital file", "Plan together", "Meeting screen"]],
@@ -266,8 +266,8 @@ T.en = {
     quoteBy: "How we want every team to talk about LINA",
   },
   slot: {
-    h2: "Let every location work like your best one.",
-    p: "Book a thirty minute demo. We will show you what LINA can do for your formula.",
+    h2: "Give your team its time back.",
+    p: "Book a thirty minute demo. We will show you what LINA can do for your organisation.",
     cta2: "Email us",
   },
   footer: {

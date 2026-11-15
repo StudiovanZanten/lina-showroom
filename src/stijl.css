@@ -308,3 +308,68 @@ p{color:var(--tekst)}
 .film video{width:100%;height:100%;object-fit:cover;display:block}
 .film figcaption{position:absolute;left:24px;bottom:24px;display:inline-flex;align-items:center;gap:10px;background:rgb(255 255 255 / .9);backdrop-filter:blur(8px);padding:10px 18px;border-radius:999px;font-weight:700;font-size:.9rem}
 @media (max-width:700px){.film{aspect-ratio:4/5;border-radius:32px}.film figcaption{left:14px;bottom:14px;font-size:.8rem}}
+
+/* ===== Zakelijke afwerking (Reno, 15 nov): geen zwevende vlekken, stippen of scheve vormen. Strak, rustig, professioneel. ===== */
+:root{--r:20px;--bg:#f7f7fb;--lijn:#e6e4ef}
+.achter{background:var(--bg)}
+.achter::after,.achter b{display:none}
+.kop{box-shadow:0 1px 0 var(--lijn);border:1px solid var(--lijn);background:rgb(255 255 255 / .92)}
+h1,h2,h3{letter-spacing:-.025em}
+h1{font-weight:700}
+h2,h2.groot{font-weight:700}
+.sticker{display:inline;margin:0;padding:0;background:none;box-shadow:none;transform:none;color:var(--lina);border-radius:0}
+.kicker{background:none;border:0;padding:0;letter-spacing:.12em;text-transform:uppercase;font-size:.76rem;color:var(--lina)}
+.sectie.donker .kicker,#veilig.sectie.donker .kicker{background:none;border:0;padding:0}
+.chips li,.chips li:nth-child(n){background:var(--wit);border:1px solid var(--lijn);color:var(--tekst)}
+.pijl{background:none;color:inherit;width:auto;height:auto}
+.knop:hover .pijl{transform:translateX(3px)}
+/* mockup zonder schuine kleurvlakken */
+.podium::before{inset:8% 2% 4% 10%;transform:none;border-radius:28px;background:linear-gradient(160deg,#ece6ff,#f6f3ff);box-shadow:none;border:1px solid var(--lijn);opacity:1}
+.podium::after{display:none}
+.scherm{animation:none;box-shadow:0 30px 60px -30px rgb(20 11 46 / .35),0 0 0 1px var(--lijn)}
+.telefoon{transform:none;animation:none;box-shadow:0 30px 60px -25px rgb(20 11 46 / .5)}
+/* band met onderdelen recht en rustig */
+.marquee{transform:none;background:var(--wit);border-block:1px solid var(--lijn);mask-image:none;margin-top:70px}
+.marquee span{color:var(--inkt);font-size:1.1rem;font-weight:600}
+.marquee i,.marquee i:nth-of-type(n){width:6px;height:6px;border-radius:50%;background:var(--licht);transform:none}
+.marquee-rij{animation-duration:70s}
+/* kaarten wit en rustig */
+.stat,.stat:nth-child(n){background:var(--wit);border:1px solid var(--lijn)}
+.stat:nth-child(1) b,.stat:nth-child(1) span{color:inherit}
+.stat b{color:var(--lina);font-weight:700}
+.module:hover{transform:translateY(-3px);box-shadow:0 20px 40px -28px rgb(20 11 46 / .35)}
+.module.uit{background:var(--wit);border:1px solid var(--lijn)}
+.module.uit h3{color:var(--inkt)}.module.uit p{color:var(--tekst)}
+.module.uit .tags li{background:var(--mist);color:var(--lina)}
+.module.uit::after{display:none}
+.mod-ic,.module:nth-child(n) .mod-ic{background:var(--mist);border-radius:14px}
+.ic,.module:nth-child(n) .mod-ic .ic{stroke:var(--lina)}
+.punt .mod-ic{background:rgb(255 255 255 / .08)}.punt .ic{stroke:#c9b6ff}
+.tags li{background:#f2f0f8;color:var(--tekst);font-weight:600}
+/* donker paneel zonder gloed */
+.sectie.donker{border-radius:28px}
+.sectie.donker::before{display:none}
+.boog{border-radius:24px;background:#1d1240}
+.knoop.hoofd .merk{filter:none;animation:none}
+#veilig.sectie.donker{border-radius:28px}
+/* tijdlijn neutraal */
+.tijdlijn time,.tijdlijn li:nth-child(n) time{background:none;padding:0;color:var(--lina);font-size:1.4rem}
+.tijdlijn li:nth-child(6){background:var(--wit);border:1px solid var(--lijn)}
+.tijdlijn li:nth-child(6) h3{color:var(--inkt)}.tijdlijn li:nth-child(6) p{color:var(--tekst)}
+/* stem */
+.boog-stem{background:linear-gradient(160deg,#ece6ff,#f6f3ff);border:1px solid var(--lijn);border-radius:28px}
+.ringen i{border-radius:50%}
+@keyframes ring{to{transform:scale(2.6);opacity:0}}
+.mic-groot{border-radius:50%;background:var(--lina)}
+.vinkjes li::before{border-radius:50%;background:var(--mist);color:var(--lina)}
+/* quote */
+.citaat{transform:none;background:var(--wit);border:1px solid var(--lijn);border-radius:28px;box-shadow:none;padding:48px 44px;border-left:4px solid var(--lina)}
+.citaat::before{display:none}
+.citaat.onthul.zicht{transform:none}
+.citaat figcaption{color:var(--zacht)}
+.nr,.stap:nth-child(n) .nr{background:var(--mist);color:var(--lina);border-radius:50%}
+/* slot */
+.slot-kaart{background:var(--inkt);border-radius:28px;box-shadow:none}
+.slot-kaart::before,.slot-kaart::after{display:none}
+.film{border-radius:24px}
+.mic-groot .ic,.mic .ic{stroke:#fff}
