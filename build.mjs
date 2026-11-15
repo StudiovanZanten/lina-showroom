@@ -62,6 +62,7 @@ const T = {
       kicker: "Waarom LINA",
       h2: "Minder schermen. Minder papier. Meer tijd voor mensen.",
       p: "De meeste organisaties werken met vijf losse systemen, drie Excellijsten en een la vol papier. LINA brengt het samen in één rustige omgeving die iedereen begrijpt, van de stagiair op de vloer tot de eigenaar die op zondagavond de cijfers bekijkt.",
+      film: "Zo voelt werken met LINA",
       stats: [["1", "systeem voor de hele organisatie"], ["8", "onderdelen, rustig ingedeeld"], ["0", "papieren mappen nodig"], ["24/7", "op elke telefoon, als app"]],
     },
     modulesKicker: "Wat LINA doet",
@@ -187,6 +188,7 @@ T.en = {
     kicker: "Why LINA",
     h2: "Fewer screens. Less paper. More time for people.",
     p: "Most organisations work with five separate systems, three spreadsheets and a drawer full of paper. LINA brings it all together in one calm place that everyone understands, from the intern on the floor to the owner checking the numbers on a Sunday evening.",
+    film: "This is what working with LINA feels like",
     stats: [["1", "system for the whole organisation"], ["8", "sections, calmly organised"], ["0", "paper files needed"], ["24/7", "on every phone, as an app"]],
   },
   modulesKicker: "What LINA does",
@@ -390,6 +392,7 @@ function pagina(t) {
     <p class="kicker onthul">${t.intro.kicker}</p>
     <h2 class="groot onthul">${t.intro.h2}</h2>
     <p class="breed onthul">${t.intro.p}</p>
+    <figure class="film onthul"><video src="/media/team.mp4" poster="/media/team.jpg" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video><figcaption><span class="stip"></span>${t.intro.film}</figcaption></figure>
     <div class="stats">${t.intro.stats.map(([n, l]) => `<div class="stat onthul"><b>${n}</b><span>${l}</span></div>`).join("")}</div>
   </div>
 </section>
@@ -527,4 +530,6 @@ mkdirSync(join(dist, "en"), { recursive: true });
 writeFileSync(join(dist, "index.html"), pagina(T.nl));
 writeFileSync(join(dist, "en", "index.html"), pagina(T.en));
 for (const f of ["stijl.css", "site.js", "icon.svg", "robots.txt"]) copyFileSync(join(hier, "src", f), join(dist, f));
+mkdirSync(join(dist, "media"), { recursive: true });
+for (const f of ["team.mp4", "team.jpg"]) copyFileSync(join(hier, "src", "media", f), join(dist, "media", f));
 console.log("klaar");
